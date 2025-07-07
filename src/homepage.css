@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    width:100%;
+    
+}
+#root{
+    margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+body {
+    width:100%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:white;
+    color: #333;
+    padding: 0;
+    margin:0;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+.App {
+  background-color: white; /* ✅ Your main React wrapper */
+  min-height: 100vh;
+}
+.navbar {
+     background-color: #050d9f;
+    padding: 20px 50px;
+    color: white;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items:first baseline;
+    margin-right: 0%;
+    max-height: 15%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+  
+
+.course-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.navbar .logo {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 0;
+    
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+   
+    font-weight: 600;
+    
+    
+    
+    
+}
+
+.main-content {
+  width: 100%;
+  max-width: 95%;
+  margin: 40px auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+
+
+.main-content h1 {
+   flex:1
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  padding: 20px 10px;
+  
+  box-sizing: border-box;
+}
+
+
+.course-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.course-card p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.course-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.footer {
+    background-color: #eaeaee;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #777;
+}
+
+@media (min-width: 1280px) {
+    .navbar {
+        padding: 20px 100px;
+    }
+    .main-content {
+        padding: 0 80px;
+    }
+}
